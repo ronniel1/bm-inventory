@@ -23,3 +23,4 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: CGO_ENABLED=0 go build -o build/bm-inventory cmd/main.go
+      - run: docker build -f Dockerfile.bm-inventory .
