@@ -4,6 +4,7 @@
 version: 2.1
 jobs:
   build:
+    machine: true
     docker:
       # specify the version
       - image: circleci/golang:1.14
